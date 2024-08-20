@@ -1,0 +1,51 @@
+@font-face {
+    font-family: byekan;
+    src: url(../font/BYekan.ttf);
+}
+
+#main {
+    font-family: byekan;
+    font-size: 100%;
+    color: white;
+}
+
+.hide1 {
+    animation: hide 2s 2s  infinite;
+}
+.show1 {
+    animation: show 2s 2s  infinite;
+}
+.hide2 {
+    animation: hide 4s 2s  infinite;
+}
+.show2 {
+    animation: show 4s 2s  infinite;
+}
+.hide3 {
+    animation: hide 8s 2s  infinite;
+}
+.show3 {
+    animation: show 8s 2s  infinite;
+}
+
+.txt{
+    animation: anim .4s infinite;
+}
+
+
+
+@keyframes hide {
+    
+    to {opacity: 0;}
+}
+
+@keyframes show {
+    
+    to {opacity: 1;}
+}
+
+@keyframes anim {
+    to {
+        color: black;
+    }
+}
