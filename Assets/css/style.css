@@ -10,23 +10,26 @@
 }
 
 .hide1 {
-    animation: hide 2s 2s  infinite;
+    animation: hide 3s linear 3s both infinite  ;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.hide2 {
+    animation: hide 3s linear 3s both infinite  ;
+}
+
+.hide3 {
+    animation: hide 3s linear 3s both infinite  ;
+}
+
+
+.show2 {
+    animation: show 3s linear 3s both infinite;
 }
 .show1 {
-    animation: show 2s 2s  infinite;
+    animation: show 3s linear 3s both infinite;
 }
-.hide2 {
-    animation: hide 4s 2s  infinite;
-}
-.show2 {
-    animation: show 4s 2s  infinite;
-}
-.hide3 {
-    animation: hide 8s 2s  infinite;
-}
-.show3 {
-    animation: show 8s 2s  infinite;
-}
+
 
 .txt{
     animation: anim .4s infinite;
@@ -48,4 +51,51 @@
     to {
         color: black;
     }
+}
+
+
+@keyframes motion {
+    0% {
+        opacity: 0;
+        transform: scale(2);
+    }
+    10% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    90% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+@keyframes motion2 {
+    0% {
+        opacity: 0;
+        transform: scale(2);
+    }
+    10% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    90% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+
+
+.mot {
+    animation: motion 2s linear 3s infinite;
+}
+.mot2 {
+    animation: motion2 2s linear 3s infinite ;
 }
